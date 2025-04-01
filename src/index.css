@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Gotham;
+  src: url(./Fonts/Gotham/Gotham-Book.otf);
+}
+
+* {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+
+  font-family: Gotham;
+}
