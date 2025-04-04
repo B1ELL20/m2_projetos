@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import capa02 from "../../images/Capa02.png"
+import about01 from "../../images/About01.png"
+import about02 from "../../images/About02.png"
 
 export const AboutBox = styled.section`
 
     width: 100%;
-    margin-top: ${({$wrap}) => $wrap === 0 ? '0px' : '-50px'};;
+    margin-top: ${({$wrap}) => $wrap === 0 ? '0px' : '-100px'};;
 `;
 
 export const AboutContainer = styled.div`
@@ -16,7 +17,7 @@ export const AboutContainer = styled.div`
     flex-wrap: wrap;
     flex-direction: ${({$wrap}) => $wrap === 0 ? 'row' : 'row-reverse'};
     justify-content: space-between;
-    align-items: ${({$wrap}) => $wrap === 0 ? 'top' : 'end'};;
+    align-items: ${({$wrap}) => $wrap === 0 ? 'top' : 'end'};
 `;
 
 export const AboutContent = styled.div`
@@ -68,7 +69,7 @@ export const AboutImage = styled.div`
 export const ContentImage = styled.div`
 
     width: 100%;
-    height: 500px;
-    background-image: url(${capa02});
+    height: 600px;
+    background-image: ${({$wrap}) => $wrap === 0 ? `url(${about01})` : `url(${about02})`};
     background-size: cover;
 `;

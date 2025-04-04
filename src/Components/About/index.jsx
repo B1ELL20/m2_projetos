@@ -22,7 +22,7 @@ const About = ({ wrap }) => {
                 <ContentButton>Venha conhecer a M2 Projetos</ContentButton>
             </AboutContent>
             <AboutImage>
-                <ContentImage/>
+                <ContentImage $wrap={wrap}/>
             </AboutImage>
         </AboutContainer>
     </AboutBox>
