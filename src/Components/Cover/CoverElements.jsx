@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from '../../images/Logo_M2.png'
+import capa from '../../images/Capa.jpeg'
 
 export const CoverBox = styled.header`
 
@@ -7,7 +8,7 @@ export const CoverBox = styled.header`
     width: 100%;
     height: 500px;
     margin-top: 250px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     position: relative;
 `;
 
@@ -45,7 +46,6 @@ export const BoxContainer = styled.div`
 
     width: 100%;
     height: 80%;
-    border: 1px solid red;
     top: 20%;
     position: absolute;
 `;
@@ -56,7 +56,7 @@ export const TitleCover = styled.h1`
     padding: 10px;
     color: #fff;
     font-size: 110px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     font-weight: 500;
 `;
 
@@ -64,12 +64,54 @@ export const SubContainerBox = styled.div`
 
     width: 100%;
     height: 250px;
-    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
 `;
 
-export const SubContainer = styled.div`
+export const SubContainerImage = styled.div`
 
     width: 50%;
-    border: 1px solid red;
+    background-color: white;
+    position: relative;
+`;
+
+export const CoverImage = styled.div`
+
+    width: 100%;
+    height: 350px;
+    background-image: url(${capa});
+    background-size: cover;
+    border: 5px solid white;
+    position: absolute;
+`;
+
+export const SubContainerContent = styled.div`
+
+    width: 50%;
+    text-align: end;
+`;
+
+export const SubTitleCover = styled.p`
+
+    width: 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 32px;
+    text-align: end;
+    border-bottom: 7px solid white;
+`;
+
+export const ButtonCover = styled.button`
+
+    width: 80%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: #000;
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 10px 5px rgba(0,0,0, 0.3);
+    border: 0px;
+    border-radius: 10px;
 `;
 

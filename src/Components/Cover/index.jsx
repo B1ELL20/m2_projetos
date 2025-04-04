@@ -1,12 +1,16 @@
 import React from 'react'
 import { 
     BoxContainer,
+    ButtonCover,
     CoverBar,
     CoverBox,
     CoverContainer,
+    CoverImage,
     CoverLogo,
-    SubContainer,
     SubContainerBox,
+    SubContainerContent,
+    SubContainerImage,
+    SubTitleCover,
     TitleCover
 } from './CoverElements'
 
@@ -20,7 +24,13 @@ const Cover = () => {
             <BoxContainer>
                 <TitleCover>PISCINAS</TitleCover>
                 <SubContainerBox>
-                    <SubContainer></SubContainer>
+                    <SubContainerImage>
+                        <CoverImage/>
+                    </SubContainerImage>
+                    <SubContainerContent>
+                        <SubTitleCover>Projete com a gente e garanta a qualidade da sua piscina</SubTitleCover>
+                        <ButtonCover>Faça já seu orçamento</ButtonCover>
+                    </SubContainerContent>
                 </SubContainerBox>
             </BoxContainer>
         </CoverContainer>
