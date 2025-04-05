@@ -69,7 +69,7 @@ export const AboutImage = styled.div`
 export const ContentImage = styled.div`
 
     width: 100%;
-    height: 600px;
+    height: ${({$wrap}) => $wrap === 0 ? '700px' : '600px'};;
     background-image: ${({$wrap}) => $wrap === 0 ? `url(${about01})` : `url(${about02})`};
     background-size: cover;
 `;
