@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import back from "../../images/back_projects.png"
+import backMax from "../../images/back_projects_max.png"
 import piscina from "../../images/piscina_project_01.jpeg"
 import project from "../../images/project_01.jpeg"
 import problems from "../../images/problems_projects.png"
@@ -8,6 +9,7 @@ export const ProjectsBox = styled.section`
 
     width: 100%;
     margin-top: 100px;
+    background-image: url(${backMax});
 `;
 
 export const ProjectsContainerBack = styled.div`
@@ -16,9 +18,14 @@ export const ProjectsContainerBack = styled.div`
     height: 100%;
     max-width: 1800px;
     margin: auto;
-    padding-top: 200px;
+    padding-top: 13%;
     background-image: url(${back});
     background-size: cover;
+
+    @media screen and (max-width: 1550px) {
+        
+        padding-top: 200px;
+    }
 `;
 
 export const BoxAlert = styled.div`
@@ -48,12 +55,14 @@ export const ProjectsContainer = styled.div`
     width: 100%;
     height: 100%;
     max-width: 1200px;
+    padding: 0px 20px;
     margin: auto;
 `;
 
 export const CarrosselContainer = styled.div`
 
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 600px;
 `;
 
@@ -86,8 +95,8 @@ export const ImagesCarrosel = styled.div`
 
 export const ImagePost = styled.div`
 
-    width: 680px;
-    height: 400px;
+    width: 100%;
+    height: 380px;
     margin: auto;
     background-image: url(${piscina});
     background-size: cover;

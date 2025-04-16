@@ -7,9 +7,12 @@ import contactBack from "../../images/contact.png"
 export const ContactBox = styled.section`
 
     width: 100%;
-    max-width: 1600px;
+    max-width: 2000px;
+    padding: 0px 20px;
+    margin: auto;
     height: 450px;
-    margin: 500px 0px 100px 0px;
+    margin-top: 500px;
+    margin-bottom: 100px;
     background-image: url(${contactBack});
     background-size: cover;
     background-position: center;

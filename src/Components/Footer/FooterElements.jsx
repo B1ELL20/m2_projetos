@@ -11,7 +11,7 @@ export const FooterContainer = styled.div`
 
     width: 100%;
     max-width: 1200px;
-    padding: 30px 0px;
+    padding: 30px 20px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
