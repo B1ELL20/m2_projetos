@@ -30,17 +30,42 @@ export const ProjectsContainerBack = styled.div`
 
 export const BoxAlert = styled.div`
 
-    width: 400px;
+    width: 50%;
     padding-bottom: 50px;
     position: absolute;
     bottom: 0px;
     left: 0px;
+
+    @media screen and (max-width: 765px) {
+        
+        width: 60%;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        width: 80%;
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        width: 90%;
+    }
 `;
 
 export const IconAlert = styled.i`
 
     font-size: 70px;
     color: #ffcc01;
+
+    @media screen and (max-width: 765px) {
+        
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        font-size: 50px;
+    }
 `;
 
 export const TextAlert = styled.p`
@@ -48,6 +73,11 @@ export const TextAlert = styled.p`
     font-size: 30px;
     letter-spacing: 1px;
     color: white;
+
+    @media screen and (max-width: 970px) {
+        
+        font-size: 24px;
+    }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -124,6 +154,7 @@ export const ProjectPost = styled.div`
        width: 100%;
        margin-top: 50px;
        display: flex;
+       flex-wrap: wrap-reverse;
     }
 `;
 
@@ -136,6 +167,17 @@ export const ImageProject = styled.div`
     background-size: cover;
     background-position: center;
     border: 5px solid white;
+
+    @media screen and (max-width: 970px) {
+    
+        width: 50%;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        width: 100%;
+        height: 350px;
+    }
 `;
 
 export const ProjectContent = styled.div`
@@ -144,6 +186,19 @@ export const ProjectContent = styled.div`
     margin-left: auto;
     margin-top: 40px;
     text-align: end;
+
+    @media screen and (max-width: 970px) {
+    
+        width: 40%;
+    }
+
+    @media screen and (max-width: 500px) {
+    
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 `;
 
 
@@ -153,6 +208,16 @@ export const ContentText = styled.p`
     letter-spacing: 1px;
     padding: 10px 0px;
     color: white;
+
+    @media screen and (max-width: 970px) {
+    
+        text-shadow: 0px 0px 10px black;
+    }
+
+    @media screen and (max-width: 670px) {
+    
+        font-size: 22px;
+    }
 `;
 
 export const BoxArrows = styled.div`

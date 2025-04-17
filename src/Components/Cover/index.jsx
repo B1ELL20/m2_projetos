@@ -7,12 +7,16 @@ import {
     CoverContainer,
     CoverImage,
     CoverLogo,
+    IconButtonCover,
     SubContainerBox,
     SubContainerContent,
     SubContainerImage,
     SubTitleCover,
+    TextButtonCover,
     TitleCover
 } from './CoverElements'
+
+import { SiMoneygram } from "react-icons/si";
 
 const Cover = () => {
   return (
@@ -29,7 +33,10 @@ const Cover = () => {
                     </SubContainerImage>
                     <SubContainerContent>
                         <SubTitleCover>Projete com a gente e garanta a qualidade da sua piscina</SubTitleCover>
-                        <ButtonCover>Faça já seu orçamento</ButtonCover>
+                        <ButtonCover>
+                            <TextButtonCover> Faça já seu orçamento</TextButtonCover>
+                            <IconButtonCover><SiMoneygram/></IconButtonCover>
+                        </ButtonCover>
                     </SubContainerContent>
                 </SubContainerBox>
             </BoxContainer>

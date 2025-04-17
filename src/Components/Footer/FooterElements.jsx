@@ -22,6 +22,11 @@ export const FooterContainer = styled.div`
 export const ContainerContacts = styled.div`
 
     width: 50%;
+
+    @media screen and (max-width: 670px) {
+    
+        width: 100%;
+    }
 `;
 
 export const TitleContacts = styled.h2`
@@ -51,6 +56,16 @@ export const TextItem = styled.p`
     letter-spacing: 1px;
     margin: 10px 0px;
     color: white;
+
+    @media screen and (max-width: 420px) {
+        
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 380px) {
+        
+        font-size: 18px;
+    }
 `;
 
 export const ContactIcon = styled.i`
@@ -59,6 +74,16 @@ export const ContactIcon = styled.i`
     margin-right: 10px;
     margin-top: 7px;
     color: #ffcc01;
+
+    @media screen and (max-width: 670px) {
+        
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 380px) {
+        
+        font-size: 24px;
+    }
 `;
 
 export const ContainerMedia = styled.div`
@@ -67,6 +92,13 @@ export const ContainerMedia = styled.div`
     display: flex;
     justify-content: end;
     align-items: center;
+
+    @media screen and (max-width: 670px) {
+    
+        width: 100%;
+        justify-content: start;
+        margin-top: 20px;
+    }
 `;
 
 export const MediaIcon = styled.i`
@@ -74,4 +106,15 @@ export const MediaIcon = styled.i`
     font-size: 40px;
     margin-left: 10px;
     color: #ffcc01;
+
+    @media screen and (max-width: 670px) {
+    
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width: 380px) {
+    
+        font-size: 30px;
+    }   
 `;

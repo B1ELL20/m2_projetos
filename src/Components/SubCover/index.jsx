@@ -5,12 +5,15 @@ import {
     SubCoverContainer 
 } from './SubCoverElements'
 
+import capa01 from "../../images/Capa01.png"
+import capa02 from "../../images/Capa02.png"
+
 const SubCover = () => {
   return (
     <SubCoverBox>
         <SubCoverContainer>
-            <ContainerImage $capa={1}/>
-            <ContainerImage $capa={2}/>
+            <ContainerImage src={capa01}/>
+            <ContainerImage src={capa02}/>
         </SubCoverContainer>
     </SubCoverBox>
   )

@@ -66,9 +66,20 @@ export const TitleCover = styled.h1`
     letter-spacing: 10px;
     font-weight: 500;
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 650px) {
 
-        text-align: center;
+        font-size: 80px;
+        text-align: start;
+    }
+
+    @media screen and (max-width: 500px) {
+
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 400px) {
+
+        font-size: 40px;
     }
 `;
 
@@ -121,6 +132,16 @@ export const SubContainerContent = styled.div`
         margin-left: auto;
         position: unset;
     }
+
+    @media screen and (max-width: 600px) {
+        
+        width: 90%;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        width: 100%;
+    }
 `;
 
 export const SubTitleCover = styled.p`
@@ -147,31 +168,100 @@ export const SubTitleCover = styled.p`
 export const ButtonCover = styled.button`
 
     width: 80%;
-    padding: 10px 20px;
+    padding: 0px 20px;
     margin-top: 30px;
     color: #000;
     background-color: #fff;
-    font-size: 30px;
-    text-align: center;
     box-shadow: 0px 10px 5px rgba(0,0,0, 0.3);
     border: 0px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
 
-    @media screen and (max-width: 1050px) {
+    @media screen and (max-width: 850px) {
+        
+        padding: 0px 15px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        padding: 0px 20px;
+    }
+
+    @media screen and (max-width: 650px) {
+        
+        width: 90%;
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        width: 100%;
+        padding: 0px 10px;
+    }
+`;
+
+export const TextButtonCover = styled.p`
+
+    font-size: 28px;
+    text-align: center;
+
+    @media screen and (max-width: 1080px) {
         
         font-size: 24px;
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 920px) {
         
-        font-size: 22px;
-        padding: 10px 15px;
+        font-size: 20px;
     }
 
     @media screen and (max-width: 765px) {
         
         font-size: 24px;
-        padding: 10px 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 380px) {
+
+        font-size: 20px;
+    }
+`;
+
+export const IconButtonCover = styled.i`
+
+    font-size: 40px;
+    padding-top: 10px;
+    margin-left: 10px;
+
+    @media screen and (max-width: 1050px) {
+        
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 850px) {
+        
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        font-size: 30px;
+    }
+    
+    @media screen and (max-width: 450px) {
+        
+        font-size: 28px;
+    }
+
+    @media screen and (max-width: 380px) {
+        
+        font-size: 26px;
     }
 `;
 

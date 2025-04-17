@@ -21,6 +21,11 @@ export const ContactBox = styled.section`
         
         height: 1300px;
     }
+
+    @media screen and (max-width: 500px) {
+        
+        margin-top: 400px;
+    }
 `;
 
 export const ContactContainer = styled.div`
@@ -50,6 +55,11 @@ export const ContainerTop = styled.div`
     @media screen and (max-width: 970px) {
         
         height: 600px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        height: 700px;
     }
 `;
 
@@ -101,6 +111,17 @@ export const TopImageLeft = styled.div`
         height: 70%;
         margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 765px) {
+        
+        width: 90%;
+        height: 60%;
+    }
+
+    @media screen and (max-width: 380px) {
+        
+        width: 100%;
+    }
 `;
 
 export const TopImageRigth = styled.div`
@@ -119,6 +140,17 @@ export const TopImageRigth = styled.div`
         margin-left: auto;
         margin-bottom: 50px;
     }
+
+    @media screen and (max-width: 765px) {
+        
+        width: 90%;
+        height: 60%;
+    }
+
+    @media screen and (max-width: 380px) {
+        
+        width: 100%;
+    }
 `;
 
 export const BottomImageLeft = styled.div`
@@ -134,17 +166,38 @@ export const BottomImageLeft = styled.div`
         
         width: 100%;
     }
+
+    @media screen and (max-width: 900px) {
+        
+        margin-top: 0px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        height: 90%;
+        margin-top: 50px;
+    }
 `;
 
 export const ContactText = styled.p`
 
     font-size: 28px;
     letter-spacing: 1px;
-    color: white;
+    color: white; 
 
     @media screen and (max-width: 970px) {
         
         font-size: 36px;
+    }
+
+    @media screen and (max-width: 900px) {
+        
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        font-size: 26px;
     }
 `;
 
@@ -166,6 +219,17 @@ export const ContactButton = styled.button`
         justify-self: center;
         padding: 5px 20px;
     }
+
+    @media screen and (max-width: 765px) {
+        
+        justify-self: center;
+        padding: 0px 20px;
+    }
+    
+    @media screen and (max-width: 400px) {
+        
+        padding: 0px 10px;
+    }
 `;
 
 export const TextButton = styled.p`
@@ -173,6 +237,7 @@ export const TextButton = styled.p`
     font-size: 28px;
     letter-spacing: 1px;
     color: black;
+    font-weight: bold;
 
     @media screen and (max-width: 970px) {
         
@@ -181,7 +246,22 @@ export const TextButton = styled.p`
 
     @media screen and (max-width: 765px) {
         
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 580px) {
+        
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 500px) {
+        
         font-size: 20px;
+    }
+
+    @media screen and (max-width: 410px) {
+        
+        font-size: 18px;
     }
 `;
 
@@ -195,5 +275,25 @@ export const ButtonIcon = styled.i`
     @media screen and (max-width: 970px) {
         
         font-size: 50px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        font-size: 60px;
+    }
+
+    @media screen and (max-width: 580px) {
+        
+        font-size: 50px;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 410px) {
+        
+        font-size: 35px;
     }
 `;

@@ -12,6 +12,14 @@ export const ServicesBox = styled.section`
     @media screen and (max-width: 765px) {
         
         height: 1000px;
+        margin: 100px 0px;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+        height: 900px;
+        margin: 0px 0px;
+        margin-bottom: 0px;
     }
 `;
 
@@ -62,6 +70,19 @@ export const ServItem = styled.div`
         height: 400px;
         transform: ${({$translate}) => $translate === 0 ? `translateY(-100px)` : $translate === 1 ? `translateY(-25px)` : `translateY(50px)`};
     }
+
+    @media screen and (max-width: 600px) {
+        
+        width: 350px;
+        height: 350px;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+        width: 300px;
+        height: 300px;
+        transform: ${({$translate}) => $translate === 0 ? `translateY(-100px)` : $translate === 1 ? `translateY(0px)` : `translateY(75px)`};
+    }
 `;
 
 export const ServIcon = styled.i`
@@ -72,6 +93,16 @@ export const ServIcon = styled.i`
     @media screen and (max-width: 765px) {
         
         font-size: 150px;
+    }
+
+    @media screen and (max-width: 600px) {
+        
+        font-size: 120px;
+    }
+    
+    @media screen and (max-width: 420px) {
+        
+        font-size: 100px;
     }
 `;
 
@@ -86,6 +117,16 @@ export const ServTitle = styled.h3`
         
         font-size: 30px;
     }
+
+    @media screen and (max-width: 600px) {
+        
+        font-size: 26px;
+    }
+    
+    @media screen and (max-width: 420px) {
+        
+        font-size: 24px;
+    }
 `;
 
 export const ServText = styled.p`
@@ -96,5 +137,15 @@ export const ServText = styled.p`
     @media screen and (max-width: 765px) {
         
         font-size: 24px;
+    }
+
+    @media screen and (max-width: 600px) {
+        
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 420px) {
+        
+        font-size: 20px;
     }
 `;

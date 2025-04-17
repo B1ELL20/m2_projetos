@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import capa01 from "../../images/Capa01.png"
-import capa02 from "../../images/Capa02.png"
 
 export const SubCoverBox = styled.div`
 
@@ -20,18 +18,13 @@ export const SubCoverContainer = styled.div`
     align-items: center;
 `;
 
-export const ContainerImage = styled.div`
+export const ContainerImage = styled.img`
 
     width: 48%;
-    height: ${({$capa}) => $capa === 1 ? "350px" : "500px"};
-    background-image: ${({$capa}) => $capa === 1 ? `url(${capa01})` : `url(${capa02})`};
-    background-size: cover;
-    background-position: center;
 
     @media screen and (max-width: 765px) {
         
         width: 100%;
-        height: ${({$capa}) => $capa === 1 ? "400px" : "650px"};
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 `;

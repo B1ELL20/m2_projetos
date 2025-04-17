@@ -85,9 +85,9 @@ const Projects = () => {
                 <ProjectsProblems>
                     <ProblemsImage/>
                     <BoxAlert>
-                    <IconAlert><RiAlertLine/></IconAlert>
-                    <TextAlert>Evite casos como esses e adquira seu projeto!</TextAlert>
-                </BoxAlert>
+                        <IconAlert><RiAlertLine/></IconAlert>
+                        <TextAlert>Evite casos como esses e adquira seu projeto!</TextAlert>
+                    </BoxAlert>
                 </ProjectsProblems>
                 
             </ProjectsContainer>

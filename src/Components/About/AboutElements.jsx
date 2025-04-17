@@ -52,7 +52,7 @@ export const ContentText = styled.p`
 
     width: 100%;
     font-size: 22px;
-    letter-spacing: 1px;
+    letter-spacing: 1px;    
 `;
 
 export const ContentButton = styled.button`
@@ -66,6 +66,31 @@ export const ContentButton = styled.button`
     border-radius: 5px;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width: 975px) {
+        
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 900px) {
+        
+        font-size: 19px;
+    }
+
+    @media screen and (max-width: 800px) {
+        
+        font-size: 18px;
+    }
+    
+    @media screen and (max-width: 800px) {
+        
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 480px) {
+        
+        font-size: 18px;
+    }
 `;
 
 export const AboutImage = styled.div`
