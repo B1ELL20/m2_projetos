@@ -64,6 +64,11 @@ export const CarrosselContainer = styled.div`
     width: 100%;
     max-width: 1200px;
     height: 600px;
+
+    @media screen and (max-width: 970px) {
+        
+        height: unset;
+    }
 `;
 
 export const Carrossels = styled.div`
@@ -91,6 +96,11 @@ export const ImagesCarrosel = styled.div`
     width: 60%;
     height: 400px;
     overflow: hidden;
+
+    @media screen and (max-width: 970px) {
+        
+        width: 100%;
+    }
 `;
 
 export const ImagePost = styled.div`
@@ -108,6 +118,13 @@ export const ProjectPost = styled.div`
 
     width: 40%;
     height: 100%;
+
+    @media screen and (max-width: 970px) {
+    
+       width: 100%;
+       margin-top: 50px;
+       display: flex;
+    }
 `;
 
 export const ImageProject = styled.div`
@@ -163,6 +180,14 @@ export const ProjectsProblems = styled.div`
     height: 650px;
     margin-top: 50px;
     position: relative;
+
+    @media screen and (max-width: 1200px) {
+    
+        height: 600px;
+        display: flex;
+        align-items: baseline;
+        justify-content: end;
+    }
 `;
 
 export const ProblemsImage = styled.div`
@@ -171,4 +196,13 @@ export const ProblemsImage = styled.div`
     height: 100%;
     background-image: url(${problems});
     background-size: cover;
+
+    @media screen and (max-width: 1200px) {
+        
+        width: 95%;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 `;

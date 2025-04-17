@@ -16,6 +16,11 @@ export const ContactBox = styled.section`
     background-image: url(${contactBack});
     background-size: cover;
     background-position: center;
+
+    @media screen and (max-width: 970px) {
+        
+        height: 1300px;
+    }
 `;
 
 export const ContactContainer = styled.div`
@@ -23,6 +28,7 @@ export const ContactContainer = styled.div`
     width: 100%;
     height: 100%;
     max-width: 1200px;
+    padding: 0px 20px;
     margin: auto;
     display: flex;
     justify-content: end;
@@ -40,6 +46,11 @@ export const ContainerTop = styled.div`
     position: absolute;
     left: 0px;
     top: -100px;
+
+    @media screen and (max-width: 970px) {
+        
+        height: 600px;
+    }
 `;
 
 export const ContainerBottom = styled.div`
@@ -47,11 +58,18 @@ export const ContainerBottom = styled.div`
     width: 100%;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
+    align-items: start;
     position: absolute;
     left: 0px;
     top: 250px;
+
+    @media screen and (max-width: 970px) {
+        
+        top: 1050px;
+        height: 500px;
+    }
 `;
 
 export const ContactContent = styled.div`
@@ -59,6 +77,13 @@ export const ContactContent = styled.div`
     width: 50%;
     height: 200px;
     text-align: end;
+
+    @media screen and (max-width: 970px) {
+        
+        width: 100%;
+        text-align: center;
+    }
+
 `;
 
 export const TopImageLeft = styled.div`
@@ -69,6 +94,13 @@ export const TopImageLeft = styled.div`
     background-size: cover;
     background-position: center;
     border: 5px solid white;
+
+    @media screen and (max-width: 970px) {
+        
+        width: 80%;
+        height: 70%;
+        margin-bottom: 50px;
+    }
 `;
 
 export const TopImageRigth = styled.div`
@@ -79,6 +111,14 @@ export const TopImageRigth = styled.div`
     background-size: cover;
     background-position: center;
     border: 5px solid white;
+
+    @media screen and (max-width: 970px) {
+        
+        width: 80%;
+        height: 70%;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
 `;
 
 export const BottomImageLeft = styled.div`
@@ -89,6 +129,11 @@ export const BottomImageLeft = styled.div`
     background-size: cover;
     background-position: center;
     border: 5px solid white;
+
+    @media screen and (max-width: 970px) {
+        
+        width: 100%;
+    }
 `;
 
 export const ContactText = styled.p`
@@ -96,6 +141,11 @@ export const ContactText = styled.p`
     font-size: 28px;
     letter-spacing: 1px;
     color: white;
+
+    @media screen and (max-width: 970px) {
+        
+        font-size: 36px;
+    }
 `;
 
 export const ContactButton = styled.button`
@@ -109,6 +159,13 @@ export const ContactButton = styled.button`
     display: flex;
     align-items: center;
     justify-self: end;
+    cursor: pointer;
+
+    @media screen and (max-width: 970px) {
+        
+        justify-self: center;
+        padding: 5px 20px;
+    }
 `;
 
 export const TextButton = styled.p`
@@ -116,6 +173,16 @@ export const TextButton = styled.p`
     font-size: 28px;
     letter-spacing: 1px;
     color: black;
+
+    @media screen and (max-width: 970px) {
+        
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        font-size: 20px;
+    }
 `;
 
 export const ButtonIcon = styled.i`
@@ -124,4 +191,9 @@ export const ButtonIcon = styled.i`
     margin-left: 20px;
     margin-top: 10px;
     color: #ffcc01;
+
+    @media screen and (max-width: 970px) {
+        
+        font-size: 50px;
+    }
 `;

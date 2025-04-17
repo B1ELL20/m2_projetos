@@ -20,7 +20,7 @@ export const CoverBox = styled.header`
 export const CoverBar = styled.div`
 
     background-color: #fff;
-    width: 80%;
+    width: 100%;
     height: 33px;
     position: absolute;
     top: 40px;

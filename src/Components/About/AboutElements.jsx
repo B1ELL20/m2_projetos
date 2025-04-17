@@ -12,6 +12,7 @@ export const AboutContainer = styled.div`
 
     width: 100%;
     max-width: 1200px;
+    padding: 0px 20px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +25,12 @@ export const AboutContent = styled.div`
 
     width: 48%;
     text-align: ${({$wrap}) => $wrap === 0 ? 'start' : 'end'};
+
+    @media screen and (max-width: 765px) {
+        
+        width: 100%;
+        margin-bottom: 100px;
+    }
 `;
 
 export const ContentTitle = styled.h2`
@@ -64,12 +71,24 @@ export const ContentButton = styled.button`
 export const AboutImage = styled.div`
 
     width: 48%;
+
+    @media screen and (max-width: 765px) {
+        
+        width: 100%;
+        margin-bottom: 200px;
+    }
 `;
 
 export const ContentImage = styled.div`
 
     width: 100%;
-    height: ${({$wrap}) => $wrap === 0 ? '700px' : '600px'};;
+    height: ${({$wrap}) => $wrap === 0 ? '700px' : '600px'};
     background-image: ${({$wrap}) => $wrap === 0 ? `url(${about01})` : `url(${about02})`};
     background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 765px) {
+        
+        height: ${({$wrap}) => $wrap === 0 ? '800px' : '650px'};
+    }
 `;
