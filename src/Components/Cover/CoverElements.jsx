@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors.js"
 import logo from '../../images/Logo_M2.png'
 import capa from '../../images/Capa.jpeg'
 
 export const CoverBox = styled.header`
 
-    background-color: #ffcc01;
+    background-color: ${colors.primary};
     width: 100%;
     height: 500px;
     margin-top: 250px;
@@ -19,7 +20,7 @@ export const CoverBox = styled.header`
 
 export const CoverBar = styled.div`
 
-    background-color: #fff;
+    background-color: ${colors.back};
     width: 100%;
     height: 33px;
     position: absolute;
@@ -61,7 +62,7 @@ export const TitleCover = styled.h1`
 
     width: 100%;
     padding: 10px;
-    color: #fff;
+    color: ${colors.back};
     font-size: 110px;
     letter-spacing: 10px;
     font-weight: 500;
@@ -94,7 +95,7 @@ export const SubContainerBox = styled.div`
 export const SubContainerImage = styled.div`
 
     width: 50%;
-    background-color: white;
+    background-color: ${colors.back};
     position: relative;
 
     @media screen and (max-width: 765px) {
@@ -149,7 +150,7 @@ export const SubTitleCover = styled.p`
     width: 100%;
     padding-bottom: 10px;
     padding-left: 10px;
-    color: #fff;
+    color: ${colors.back};
     font-size: 30px;
     text-align: end;
     border-bottom: 7px solid white;
@@ -170,8 +171,8 @@ export const ButtonCover = styled.button`
     width: 80%;
     padding: 0px 20px;
     margin-top: 30px;
-    color: #000;
-    background-color: #fff;
+    color: ${colors.secundary};
+    background-color: ${colors.back};
     box-shadow: 0px 10px 5px rgba(0,0,0, 0.3);
     border: 0px;
     border-radius: 10px;
@@ -179,6 +180,13 @@ export const ButtonCover = styled.button`
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    transition: 0.1s;
+    cursor: pointer;
+
+    &:hover {
+
+        transform: scale(1.05);
+    }
 
     @media screen and (max-width: 850px) {
         

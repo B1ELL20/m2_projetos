@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { 
     AboutBox, 
     AboutContainer,
@@ -11,15 +11,27 @@ import {
     TitleBorderBottom
 } from './AboutElements'
 
+import { contents_about } from "../../settings/contents"
+
+import Aos from "aos"
+import "aos/dist/aos.css"
+
 const About = ({ wrap }) => {
+
+    useEffect(() => {
+
+        Aos.init({ duration: 500 });
+
+    }, []);
+
   return (
     <AboutBox $wrap={wrap}>
         <AboutContainer $wrap={wrap}>
             <AboutContent $wrap={wrap}>
-                <ContentTitle>Boa Elaboração</ContentTitle>
+                <ContentTitle>{contents_about[wrap].title}</ContentTitle>
                 <TitleBorderBottom $wrap={wrap}/>
-                <ContentText>Se você quiser executar a sua piscina de forma prática, o projeto vai te dar o passo a passo para fazer tudo corretamente. Com um processo prático e eficiente, garantindo qualidade e evitando sua dor de cabeça.</ContentText>
-                <ContentButton>Venha conhecer a M2 Projetos</ContentButton>
+                <ContentText>{contents_about[wrap].content}</ContentText>
+                <ContentButton data-aos="fade-left">{contents_about[wrap].button}</ContentButton>
             </AboutContent>
             <AboutImage>
                 <ContentImage $wrap={wrap}/>

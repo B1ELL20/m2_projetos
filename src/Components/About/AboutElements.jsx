@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors";
 import about01 from "../../images/About01.png"
 import about02 from "../../images/About02.png"
 
@@ -44,7 +45,7 @@ export const TitleBorderBottom = styled.hr`
 
     width: 30%;
     margin: 15px 0px 30px 0px;
-    border: 4px solid #ffcc01;
+    border: 4px solid ${colors.primary};
     margin-left: ${({$wrap}) => $wrap === 0 ? 'unset' : 'auto'};
 `;
 
@@ -61,8 +62,8 @@ export const ContentButton = styled.button`
     margin-top: 40px;
     font-size: 24px;
     letter-spacing: 1px;
-    color: white;
-    background-color: #ffcc01;
+    color: ${colors.back};
+    background-color: ${colors.primary};
     border-radius: 5px;
     border: none;
     cursor: pointer;

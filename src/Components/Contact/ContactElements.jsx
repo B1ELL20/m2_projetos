@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors";
 import contact01 from "../../images/Contact01.jpeg"
 import contact02 from "../../images/Contact02.jpeg"
 import contact03 from "../../images/Contact03.png"
@@ -103,7 +104,7 @@ export const TopImageLeft = styled.div`
     background-image: url(${contact01});
     background-size: cover;
     background-position: center;
-    border: 5px solid white;
+    border: 5px solid ${colors.back};
 
     @media screen and (max-width: 970px) {
         
@@ -131,7 +132,7 @@ export const TopImageRigth = styled.div`
     background-image: url(${contact02});
     background-size: cover;
     background-position: center;
-    border: 5px solid white;
+    border: 5px solid ${colors.back};
 
     @media screen and (max-width: 970px) {
         
@@ -160,7 +161,7 @@ export const BottomImageLeft = styled.div`
     background-image: url(${contact03});
     background-size: cover;
     background-position: center;
-    border: 5px solid white;
+    border: 5px solid ${colors.back};
 
     @media screen and (max-width: 970px) {
         
@@ -183,7 +184,7 @@ export const ContactText = styled.p`
 
     font-size: 28px;
     letter-spacing: 1px;
-    color: white; 
+    color: ${colors.back}; 
 
     @media screen and (max-width: 970px) {
         
@@ -207,7 +208,7 @@ export const ContactButton = styled.button`
     margin-top: 30px;
     border-radius: 10px;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
-    background-color: white;
+    background-color: ${colors.back};
     border: none;
     display: flex;
     align-items: center;
@@ -236,7 +237,7 @@ export const TextButton = styled.p`
 
     font-size: 28px;
     letter-spacing: 1px;
-    color: black;
+    color: ${colors.secundary};
     font-weight: bold;
 
     @media screen and (max-width: 970px) {
@@ -270,7 +271,7 @@ export const ButtonIcon = styled.i`
     font-size: 40px;
     margin-left: 20px;
     margin-top: 10px;
-    color: #ffcc01;
+    color: ${colors.primary};
 
     @media screen and (max-width: 970px) {
         

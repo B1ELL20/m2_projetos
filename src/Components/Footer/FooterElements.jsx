@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors";
 
 export const FooterBox = styled.footer`
 
     width: 100%;
     margin-top: 300px;
-    background-color: black;
+    background-color: ${colors.secundary};
 `;
 
 export const FooterContainer = styled.div`
@@ -34,7 +35,7 @@ export const TitleContacts = styled.h2`
     font-size: 36px;
     letter-spacing: 1px;
     padding-bottom: 10px;
-    color: white;
+    color: ${colors.back};
 `;
 
 export const ContactsList = styled.ul`
@@ -55,7 +56,7 @@ export const TextItem = styled.p`
     font-size: 24px;
     letter-spacing: 1px;
     margin: 10px 0px;
-    color: white;
+    color: ${colors.back};
 
     @media screen and (max-width: 420px) {
         
@@ -73,7 +74,7 @@ export const ContactIcon = styled.i`
     font-size: 28px;
     margin-right: 10px;
     margin-top: 7px;
-    color: #ffcc01;
+    color: ${colors.primary};
 
     @media screen and (max-width: 670px) {
         
@@ -105,7 +106,7 @@ export const MediaIcon = styled.i`
 
     font-size: 40px;
     margin-left: 10px;
-    color: #ffcc01;
+    color: ${colors.primary};
 
     @media screen and (max-width: 670px) {
     

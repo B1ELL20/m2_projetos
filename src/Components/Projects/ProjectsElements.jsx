@@ -1,7 +1,11 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors";
 import back from "../../images/back_projects.png"
 import backMax from "../../images/back_projects_max.png"
-import piscina from "../../images/piscina_project_01.jpeg"
+import piscina01 from "../../images/piscina_project_01.jpeg"
+import piscina02 from "../../images/piscina_project_02.jpeg"
+import piscina03 from "../../images/piscina_project_03.jpeg"
+import piscina04 from "../../images/piscina_project_04.jpeg"
 import project from "../../images/project_01.jpeg"
 import problems from "../../images/problems_projects.png"
 
@@ -55,7 +59,7 @@ export const BoxAlert = styled.div`
 export const IconAlert = styled.i`
 
     font-size: 70px;
-    color: #ffcc01;
+    color: ${colors.primary};
 
     @media screen and (max-width: 765px) {
         
@@ -72,7 +76,7 @@ export const TextAlert = styled.p`
 
     font-size: 30px;
     letter-spacing: 1px;
-    color: white;
+    color: ${colors.back};
 
     @media screen and (max-width: 970px) {
         
@@ -138,9 +142,9 @@ export const ImagePost = styled.div`
     width: 100%;
     height: 380px;
     margin: auto;
-    background-image: url(${piscina});
+    background-image: ${({$select}) => $select === 0 ? `url(${piscina01})` : $select === 1 ? `url(${piscina02})` : $select === 2 ? `url(${piscina03})` : `url(${piscina04})`};
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     box-shadow: 0px 0px 10px rgba(0,0,0, 0.8);
 `;
 
@@ -166,7 +170,7 @@ export const ImageProject = styled.div`
     background-image: url(${project});
     background-size: cover;
     background-position: center;
-    border: 5px solid white;
+    border: 5px solid ${colors.back};
 
     @media screen and (max-width: 970px) {
     
@@ -207,7 +211,7 @@ export const ContentText = styled.p`
     font-size: 24px;
     letter-spacing: 1px;
     padding: 10px 0px;
-    color: white;
+    color: ${colors.back};
 
     @media screen and (max-width: 970px) {
     
@@ -234,8 +238,8 @@ export const ButtonsArrows = styled.button`
     margin: 10px;
     border-radius: 100%;
     border: none;
-    background-color: white;
-    color: #ffcc01;
+    background-color: ${colors.back};
+    color: ${colors.primary};
     cursor: pointer;
 `;
 

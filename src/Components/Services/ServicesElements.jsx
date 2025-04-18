@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../settings/colors";
 import servs from '../../images/Servs.png'
 
 export const ServicesBox = styled.section`
@@ -7,7 +8,7 @@ export const ServicesBox = styled.section`
     height: 450px;
     margin: 200px 0px;
     margin-bottom: 300px;
-    background-color: #ffcc01;
+    background-color: ${colors.primary};
 
     @media screen and (max-width: 765px) {
         
@@ -45,7 +46,6 @@ export const ContainerServs = styled.div`
     justify-content: space-around;
     align-items: center;
 `;
-
 
 export const ServItem = styled.div`
 
@@ -88,7 +88,7 @@ export const ServItem = styled.div`
 export const ServIcon = styled.i`
 
     font-size: 100px;
-    color: #ffcc01;
+    color: ${colors.primary};
 
     @media screen and (max-width: 765px) {
         

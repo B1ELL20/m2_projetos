@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { 
     BoxAlert,
     BoxArrows,
@@ -23,6 +23,9 @@ import {
 
 import { RiAlertLine } from "react-icons/ri";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const Projects = () => {
 
@@ -52,6 +55,12 @@ const Projects = () => {
         }
     }
 
+    useEffect(() => {
+
+        Aos.init({ duration: 700 });
+
+    }, []);
+
   return (
     <ProjectsBox>
         <ProjectsContainerBack>
@@ -60,19 +69,19 @@ const Projects = () => {
                 <CarrosselContainer>
 
                         <PostContainer>
-                            <ImagesCarrosel>
+                            <ImagesCarrosel data-aos="fade-left">
                                 <Carrossels $position={position}>
-                                    <ImagePost/>
-                                    <ImagePost/>
-                                    <ImagePost/>
-                                    <ImagePost/>
+                                    <ImagePost $select={0}/>
+                                    <ImagePost $select={1}/>
+                                    <ImagePost $select={2}/>
+                                    <ImagePost $select={3}/>
                                 </Carrossels>
                             </ImagesCarrosel>
                             <ProjectPost>
                                 <ImageProject/>
                                 <ProjectContent>
                                     <ContentText>Projeto de piscinas elaborados com qualidade e eficiência</ContentText>
-                                    <BoxArrows>
+                                    <BoxArrows data-aos="fade-left">
                                         <ButtonsArrows onClick={goToBack}><IoIosArrowBack/></ButtonsArrows>
                                         <ButtonsArrows onClick={goToNext}><IoIosArrowForward/></ButtonsArrows>
                                     </BoxArrows>
@@ -84,7 +93,7 @@ const Projects = () => {
 
                 <ProjectsProblems>
                     <ProblemsImage/>
-                    <BoxAlert>
+                    <BoxAlert data-aos="fade-left">
                         <IconAlert><RiAlertLine/></IconAlert>
                         <TextAlert>Evite casos como esses e adquira seu projeto!</TextAlert>
                     </BoxAlert>
