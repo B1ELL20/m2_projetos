@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 import { colors } from "../../settings/colors";
 import about01 from "../../images/About01.png"
 import about02 from "../../images/About02.png"
@@ -27,7 +28,7 @@ export const AboutContent = styled.div`
     width: 48%;
     text-align: ${({$wrap}) => $wrap === 0 ? 'start' : 'end'};
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 900px) {
         
         width: 100%;
         margin-bottom: 100px;
@@ -56,18 +57,43 @@ export const ContentText = styled.p`
     letter-spacing: 1px;    
 `;
 
-export const ContentButton = styled.button`
+export const ContentButton = styled(LinkS)`
 
     padding: 10px 20px;
+    width: 80%;
     margin-top: 40px;
-    font-size: 24px;
-    letter-spacing: 1px;
     color: ${colors.back};
     background-color: ${colors.primary};
     border-radius: 5px;
     border: none;
+    display: flex;
+    justify-self: ${({ $wrap }) => $wrap === 0 ? "start" : "end"};
+    transition: 0.1s;
     cursor: pointer;
 
+    &:hover {
+
+        transform: scale(1.05);
+    }
+
+    @media screen and (max-width: 900px) {
+        
+        width: 90%;
+    }
+
+    @media screen and (max-width: 600px) {
+        
+        width: 100%;
+    }
+`;
+
+export const ButtonText = styled.p`
+
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    
     @media screen and (max-width: 975px) {
         
         font-size: 22px;
@@ -75,7 +101,7 @@ export const ContentButton = styled.button`
 
     @media screen and (max-width: 900px) {
         
-        font-size: 19px;
+        font-size: 26px;
     }
 
     @media screen and (max-width: 800px) {
@@ -90,7 +116,12 @@ export const ContentButton = styled.button`
 
     @media screen and (max-width: 480px) {
         
-        font-size: 18px;
+        font-size: 20px;
+    }
+    
+    @media screen and (max-width: 420px) {
+        
+        font-size: 16px;
     }
 `;
 
@@ -98,7 +129,7 @@ export const AboutImage = styled.div`
 
     width: 48%;
 
-    @media screen and (max-width: 765px) {
+    @media screen and (max-width: 900px) {
         
         width: 100%;
         margin-bottom: 200px;

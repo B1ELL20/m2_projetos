@@ -27,7 +27,10 @@ const Services = () => {
   return (
     <ServicesBox>
         <ServicesContainer>
-          <ContainerServs data-aos="flip-up">
+          <ContainerServs 
+            data-aos="flip-up"
+            data-aos-offset="400"
+          >
             <ServItem $translate={0}>
               <ServIcon><IoNewspaperOutline/></ServIcon>
               <ServTitle >Projetos Elaborados</ServTitle>

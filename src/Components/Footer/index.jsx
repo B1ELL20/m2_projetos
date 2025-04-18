@@ -19,7 +19,7 @@ import { FiYoutube } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <FooterBox>
+    <FooterBox id='footer'>
         <FooterContainer>
             <ContainerContacts>
                 <TitleContacts>Contatos</TitleContacts>
@@ -30,10 +30,10 @@ const Footer = () => {
                 </ContactsList>
             </ContainerContacts>
             <ContainerMedia>
-                <MediaIcon><FaInstagram/></MediaIcon>
-                <MediaIcon><FaXTwitter/></MediaIcon>
-                <MediaIcon><FaWhatsapp/></MediaIcon>
-                <MediaIcon><FiYoutube/></MediaIcon>
+                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaInstagram/></MediaIcon>
+                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaXTwitter/></MediaIcon>
+                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaWhatsapp/></MediaIcon>
+                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FiYoutube/></MediaIcon>
             </ContainerMedia>
         </FooterContainer>
     </FooterBox>

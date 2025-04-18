@@ -39,17 +39,17 @@ const Projects = () => {
 
         } else if (position === 0) {
 
-            setPosition(3);
+            setPosition(2);
         }
     }
 
     function goToNext() {
         
-        if (position < 3) {
+        if (position < 2) {
 
             setPosition(position + 1);
 
-        } else if (position === 3) {
+        } else if (position === 2) {
 
             setPosition(0);
         }
@@ -74,7 +74,6 @@ const Projects = () => {
                                     <ImagePost $select={0}/>
                                     <ImagePost $select={1}/>
                                     <ImagePost $select={2}/>
-                                    <ImagePost $select={3}/>
                                 </Carrossels>
                             </ImagesCarrosel>
                             <ProjectPost>

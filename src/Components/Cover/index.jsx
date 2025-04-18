@@ -42,7 +42,7 @@ const Cover = () => {
                     </SubContainerImage>
                     <SubContainerContent>
                         <SubTitleCover>Projete com a gente e garanta a qualidade da sua piscina</SubTitleCover>
-                        <ButtonCover>
+                        <ButtonCover spy={true} offset={-150} smooth={true} duration={800} to="contact">
                             <TextButtonCover data-aos="fade-left"> Faça já seu orçamento</TextButtonCover>
                             <IconButtonCover><SiMoneygram/></IconButtonCover>
                         </ButtonCover>

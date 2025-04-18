@@ -238,7 +238,6 @@ export const TextButton = styled.p`
     font-size: 28px;
     letter-spacing: 1px;
     color: ${colors.secundary};
-    font-weight: bold;
 
     @media screen and (max-width: 970px) {
         
@@ -256,6 +255,11 @@ export const TextButton = styled.p`
     }
 
     @media screen and (max-width: 500px) {
+        
+        font-size: 22px;
+    }
+
+    @media screen and (max-width: 440px) {
         
         font-size: 20px;
     }
@@ -293,8 +297,8 @@ export const ButtonIcon = styled.i`
         font-size: 40px;
     }
 
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 400px) {
         
-        font-size: 35px;
+        font-size: 32px;
     }
 `;

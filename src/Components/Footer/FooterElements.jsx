@@ -71,7 +71,7 @@ export const TextItem = styled.p`
 
 export const ContactIcon = styled.i`
 
-    font-size: 28px;
+    font-size: 30px;
     margin-right: 10px;
     margin-top: 7px;
     color: ${colors.primary};
@@ -102,11 +102,19 @@ export const ContainerMedia = styled.div`
     }
 `;
 
-export const MediaIcon = styled.i`
+export const MediaIcon = styled.a`
 
     font-size: 40px;
     margin-left: 10px;
     color: ${colors.primary};
+    transition: 0.1s;
+    cursor: pointer;
+
+    &:hover {
+
+        color: ${colors.back};
+        transform: scale(1.05);
+    }
 
     @media screen and (max-width: 670px) {
     

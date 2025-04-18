@@ -28,7 +28,7 @@ const Contact = () => {
     }, []);
 
   return (
-    <ContactBox>
+    <ContactBox id='contact'>
         <ContactContainer>
             <ContainerTop>
                 <TopImageLeft/>

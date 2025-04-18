@@ -8,6 +8,8 @@ import piscina03 from "../../images/piscina_project_03.jpeg"
 import piscina04 from "../../images/piscina_project_04.jpeg"
 import project from "../../images/project_01.jpeg"
 import problems from "../../images/problems_projects.png"
+import problemsTablet from "../../images/problems_projects_tablet.png"
+import problemsMobile from "../../images/problems_projects_mobile.png"
 
 export const ProjectsBox = styled.section`
 
@@ -107,10 +109,10 @@ export const CarrosselContainer = styled.div`
 
 export const Carrossels = styled.div`
 
-    width: 400%;
+    width: 300%;
     height: 400px;
     display: flex;
-    margin-left: ${({ $position }) => ($position === 1 ? '-100%' : $position === 2 ? '-200%' : $position === 3 ? '-300%' : '0')};
+    margin-left: ${({ $position }) => ($position === 1 ? '-100%' : $position === 2 ? '-200%' : '0')};
     transition: 1s;
 `;
 
@@ -249,6 +251,7 @@ export const ProjectsProblems = styled.div`
     height: 650px;
     margin-top: 50px;
     position: relative;
+    box-sizing: border-box;
 
     @media screen and (max-width: 1200px) {
     
@@ -256,6 +259,25 @@ export const ProjectsProblems = styled.div`
         display: flex;
         align-items: baseline;
         justify-content: end;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        height: 750px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 500px) {
+        
+        height: 650px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        height: 600px;
+        padding-bottom: 200px;
     }
 `;
 
@@ -270,8 +292,14 @@ export const ProblemsImage = styled.div`
         
         width: 95%;
         height: 100%;
+        background-image: url(${problemsTablet});
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 765px) {
+        
+        background-image: url(${problemsMobile});
     }
 `;

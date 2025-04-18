@@ -8,7 +8,7 @@ export const contents_about = [
 
     {
         title: "Projetos de Confiança",
-        content: "Aqui na M2 Projetos, você encontra um trabalho de confiança e consistência. Nós realizamos seu projeto do jeito que preferir de maneira eficiente e bem clara. Desde a ideia até o projeto final, seguindo uma linha de confiabilidade no nosso serviço prestado e entregue.",
+        content: "Aqui na M2 Projetos, você encontra um trabalho de confiança e consistência. Nós realizamos seu projeto do jeito que preferir de maneira eficiente e bem clara. Desde a ideia até o projeto final.",
         button: "Faça já seu orçamento"
     }
 ]

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { colors } from "../../settings/colors.js"
 import logo from '../../images/Logo_M2.png'
 import capa from '../../images/Capa.jpeg'
+import { Link as LinkS } from "react-scroll";
 
 export const CoverBox = styled.header`
 
@@ -166,7 +167,7 @@ export const SubTitleCover = styled.p`
     }
 `;
 
-export const ButtonCover = styled.button`
+export const ButtonCover = styled(LinkS)`
 
     width: 80%;
     padding: 0px 20px;

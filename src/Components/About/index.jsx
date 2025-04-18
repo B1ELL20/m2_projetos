@@ -4,6 +4,7 @@ import {
     AboutContainer,
     AboutContent,
     AboutImage,
+    ButtonText,
     ContentButton,
     ContentImage,
     ContentText,
@@ -18,6 +19,8 @@ import "aos/dist/aos.css"
 
 const About = ({ wrap }) => {
 
+    const links = ["footer", "contact"]
+
     useEffect(() => {
 
         Aos.init({ duration: 500 });
@@ -31,7 +34,9 @@ const About = ({ wrap }) => {
                 <ContentTitle>{contents_about[wrap].title}</ContentTitle>
                 <TitleBorderBottom $wrap={wrap}/>
                 <ContentText>{contents_about[wrap].content}</ContentText>
-                <ContentButton data-aos="fade-left">{contents_about[wrap].button}</ContentButton>
+                <ContentButton $wrap={wrap} spy={true} offset={-150} smooth={true} duration={800} to={links[wrap]}>
+                    <ButtonText data-aos="fade-left" data-aos-offset="300">{contents_about[wrap].button}</ButtonText>
+                </ContentButton>
             </AboutContent>
             <AboutImage>
                 <ContentImage $wrap={wrap}/>
