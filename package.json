@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://b1ell20.github.io/projeto_site_m2",
+  "homepage": "https://b1ell20.github.io/m2_projetos",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
