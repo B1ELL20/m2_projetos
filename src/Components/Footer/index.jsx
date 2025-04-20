@@ -30,10 +30,10 @@ const Footer = () => {
                 </ContactsList>
             </ContainerContacts>
             <ContainerMedia>
-                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaInstagram/></MediaIcon>
-                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaXTwitter/></MediaIcon>
-                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FaWhatsapp/></MediaIcon>
-                <MediaIcon href="https://michalsnik.github.io/aos/" target='_blank'><FiYoutube/></MediaIcon>
+                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaInstagram/></MediaIcon>
+                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaXTwitter/></MediaIcon>
+                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaWhatsapp/></MediaIcon>
+                <MediaIcon href="https://g3codee.com.br" target='_blank'><FiYoutube/></MediaIcon>
             </ContainerMedia>
         </FooterContainer>
     </FooterBox>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { 
     BoxContainer,
     ButtonCover,
@@ -22,11 +22,25 @@ import { SiMoneygram } from "react-icons/si";
 
 const Cover = () => {
 
+    const [offset_button, setOffset] = useState(0);
+    const [offset_effect, setOffsetEffect] = useState(0);
+
     useEffect(() => {
 
         Aos.init({ duration: 1000 });
 
+        if (window.screen.width < 965) {
+
+            setOffsetEffect(-100);
+            setOffset(400);
+    
+        } else {
+            
+            setOffset(-150);
+        }
+    
     }, []);
+
 
   return (
 
@@ -42,8 +56,8 @@ const Cover = () => {
                     </SubContainerImage>
                     <SubContainerContent>
                         <SubTitleCover>Projete com a gente e garanta a qualidade da sua piscina</SubTitleCover>
-                        <ButtonCover spy={true} offset={-150} smooth={true} duration={800} to="contact">
-                            <TextButtonCover data-aos="fade-left"> Faça já seu orçamento</TextButtonCover>
+                        <ButtonCover spy={true} offset={offset_button} smooth={true} duration={800} to="contact">
+                            <TextButtonCover data-aos="fade-left" data-aos-offset={offset_effect}> Faça já seu orçamento</TextButtonCover>
                             <IconButtonCover><SiMoneygram/></IconButtonCover>
                         </ButtonCover>
                     </SubContainerContent>

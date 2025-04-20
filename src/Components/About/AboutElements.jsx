@@ -116,10 +116,25 @@ export const ButtonText = styled.p`
 
     @media screen and (max-width: 480px) {
         
-        font-size: 20px;
+        font-size: 22px;
     }
     
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 440px) {
+        
+        font-size: 20px;
+    }
+
+    @media screen and (max-width: 410px) {
+        
+        font-size: 19px;
+    }
+
+    @media screen and (max-width: 400px) {
+        
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 380px) {
         
         font-size: 16px;
     }
