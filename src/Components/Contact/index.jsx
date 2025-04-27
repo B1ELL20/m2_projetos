@@ -27,6 +27,11 @@ const Contact = () => {
 
     }, []);
 
+    function goToThanks() {
+
+        window.location.href = "#/thanks"
+    }
+
   return (
     <ContactBox id='contact'>
         <ContactContainer>
@@ -38,7 +43,7 @@ const Contact = () => {
                 <BottomImageLeft data-aos="fade-up"/>
                 <ContactContent>
                     <ContactText>Peça já seu projeto de forma rápida e prática</ContactText>
-                    <ContactButton><TextButton data-aos="fade-left">Acesse nosso WhatsApp</TextButton> <ButtonIcon data-aos="zoom-in"><FaWhatsapp/></ButtonIcon></ContactButton>
+                    <ContactButton onClick={goToThanks}><TextButton data-aos="fade-left">Acesse nosso WhatsApp</TextButton> <ButtonIcon data-aos="zoom-in"><FaWhatsapp/></ButtonIcon></ContactButton>
                 </ContactContent>
             </ContainerBottom>
         </ContactContainer>
