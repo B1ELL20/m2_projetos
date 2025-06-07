@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 import { colors } from "../../settings/colors";
-import about01 from "../../images/About01.png"
-import about02 from "../../images/About02.png"
+import about01 from "../../images/About01.webp"
+import about02 from "../../images/About02.webp"
 
 export const AboutBox = styled.section`
 

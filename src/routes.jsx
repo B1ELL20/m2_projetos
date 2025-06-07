@@ -8,7 +8,7 @@ const Rotas = () => {
   return (
     <HashRouter basename='/'>
         <Routes>
-          <Route path='/' element={<App />}/>
+          <Route path='/' element={<App />} exact/>
           <Route path='/thanks' element={<Thanks />}/>
         </Routes>
     </HashRouter>

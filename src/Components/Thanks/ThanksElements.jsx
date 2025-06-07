@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../settings/colors";
-import logo from '../../images/Logo_M2.png'
+import logo from '../../images/Logo_M2.webp'
 
 export const ThanksBox = styled.div`
 

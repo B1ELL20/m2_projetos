@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { colors } from "../../settings/colors";
-import back from "../../images/back_projects.png"
-import backMax from "../../images/back_projects_max.png"
-import piscina01 from "../../images/piscina_project_01.jpeg"
-import piscina02 from "../../images/piscina_project_02.jpeg"
-import piscina03 from "../../images/piscina_project_03.jpeg"
-import piscina04 from "../../images/piscina_project_04.jpeg"
-import project from "../../images/project_01.jpeg"
-import problems from "../../images/problems_projects.png"
-import problemsTablet from "../../images/problems_projects_tablet.png"
-import problemsMobile from "../../images/problems_projects_mobile.png"
+import back from "../../images/back_projects.webp"
+import backMax from "../../images/back_projects_max.webp"
+import piscina01 from "../../images/piscina_project_01.webp"
+import piscina02 from "../../images/piscina_project_02.webp"
+import piscina03 from "../../images/piscina_project_03.webp"
+import piscina04 from "../../images/piscina_project_04.webp"
+import project from "../../images/project_01.webp"
+import problems from "../../images/problems_projects.webp"
+import problemsTablet from "../../images/problems_projects_tablet.webp"
+import problemsMobile from "../../images/problems_projects_mobile.webp"
 
 export const ProjectsBox = styled.section`
 

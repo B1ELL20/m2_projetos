@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { colors } from "../../settings/colors";
-import contact01 from "../../images/Contact01.jpeg"
-import contact02 from "../../images/Contact02.jpeg"
-import contact03 from "../../images/Contact03.png"
-import contactBack from "../../images/contact.png"
+import contact01 from "../../images/Contact01.webp"
+import contact02 from "../../images/Contact02.webp"
+import contact03 from "../../images/Contact03.webp"
+import contactBack from "../../images/contact.webp"
 
 export const ContactBox = styled.section`
 

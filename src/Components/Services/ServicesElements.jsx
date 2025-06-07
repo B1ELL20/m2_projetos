@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../settings/colors";
-import servs from '../../images/Servs.png'
+import servs from '../../images/Servs.webp'
 
 export const ServicesBox = styled.section`
 

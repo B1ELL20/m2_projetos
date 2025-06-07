@@ -24,16 +24,16 @@ const Footer = () => {
             <ContainerContacts>
                 <TitleContacts>Contatos</TitleContacts>
                 <ContactsList>
-                    <ContactsItem><ContactIcon><MdOutlineLocalPhone/></ContactIcon><TextItem>(99) 9999-9999</TextItem></ContactsItem>
+                    <ContactsItem><ContactIcon><MdOutlineLocalPhone/></ContactIcon><TextItem>(85) 9297-1562</TextItem></ContactsItem>
                     <ContactsItem><ContactIcon><FaInstagram/></ContactIcon><TextItem>m2.projetos</TextItem></ContactsItem>
                     <ContactsItem><ContactIcon><MdAlternateEmail/></ContactIcon><TextItem>contato@m2projetos.com</TextItem></ContactsItem>
                 </ContactsList>
             </ContainerContacts>
             <ContainerMedia>
-                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaInstagram/></MediaIcon>
-                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaXTwitter/></MediaIcon>
-                <MediaIcon href="https://g3codee.com.br" target='_blank'><FaWhatsapp/></MediaIcon>
-                <MediaIcon href="https://g3codee.com.br" target='_blank'><FiYoutube/></MediaIcon>
+                <MediaIcon aria-label='Instagram da empresa' href="https://www.instagram.com/m2.projetos?igsh=MThzNjFlZm5vbmVk" target='_blank'><FaInstagram/></MediaIcon>
+                <MediaIcon aria-label='Twitter da empresa' href="#" target='_blank'><FaXTwitter/></MediaIcon>
+                <MediaIcon aria-label='WhatsApp da empresa' href="https://wa.me/558592971562/" target='_blank'><FaWhatsapp/></MediaIcon>
+                <MediaIcon aria-label='Youtube da empresa' href="#" target='_blank'><FiYoutube/></MediaIcon>
             </ContainerMedia>
         </FooterContainer>
     </FooterBox>

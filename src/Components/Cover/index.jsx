@@ -25,6 +25,11 @@ const Cover = () => {
     const [offset_button, setOffset] = useState(0);
     const [offset_effect, setOffsetEffect] = useState(0);
 
+    function goToThanks() {
+
+        window.location.href = "#/thanks"
+    }
+
     useEffect(() => {
 
         Aos.init({ duration: 1000 });
@@ -56,7 +61,7 @@ const Cover = () => {
                     </SubContainerImage>
                     <SubContainerContent>
                         <SubTitleCover>Projete com a gente e garanta a qualidade da sua piscina</SubTitleCover>
-                        <ButtonCover spy={true} offset={offset_button} smooth={true} duration={800} to="contact">
+                        <ButtonCover onClick={goToThanks}>
                             <TextButtonCover data-aos="fade-left" data-aos-offset={offset_effect}> Faça já seu orçamento</TextButtonCover>
                             <IconButtonCover><SiMoneygram/></IconButtonCover>
                         </ButtonCover>

@@ -81,8 +81,8 @@ const Projects = () => {
                                 <ProjectContent>
                                     <ContentText>Projeto de piscinas elaborados com qualidade e eficiência</ContentText>
                                     <BoxArrows data-aos="fade-left">
-                                        <ButtonsArrows onClick={goToBack}><IoIosArrowBack/></ButtonsArrows>
-                                        <ButtonsArrows onClick={goToNext}><IoIosArrowForward/></ButtonsArrows>
+                                        <ButtonsArrows name='esquerda' onClick={goToBack}><IoIosArrowBack/></ButtonsArrows>
+                                        <ButtonsArrows name='direita' onClick={goToNext}><IoIosArrowForward/></ButtonsArrows>
                                     </BoxArrows>
                                 </ProjectContent>
                             </ProjectPost>
